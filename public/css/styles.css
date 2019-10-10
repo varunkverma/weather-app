@@ -1,0 +1,229 @@
+/* body {
+  color: #333;
+  
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+header {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+header a {
+  color: #888;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+footer {
+  color: #888;
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.potrait {
+  width: 250px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: #fff;
+  background: #286fa8;
+}
+
+nav {
+  max-width: 80%;
+  margin: auto;
+}
+
+header nav .container {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+header nav .container h3 {
+  font-size: 2rem;
+}
+
+header nav .container ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav .container ul li {
+  margin: 1rem 0.2rem;
+}
+
+header nav .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.8s ease-in-out;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+}
+
+header nav .container ul li a:hover {
+  background: #5397cf;
+}
+
+/* Content */
+
+.content {
+  margin: 0 auto;
+  height: 50vh;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.msg-info {
+  background: #f7c788;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+  width: 750px;
+}
+
+.content .weather-form {
+  margin-top: 1.5rem;
+}
+
+.content .weather-form .input-group {
+  height: 2.5rem;
+  width: 20rem;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0.5rem 0.5reml;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-primary {
+  background: #286fa8;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #5397cf;
+}
+
+/* #weather-msg {
+  margin-top: 2rem;
+  background: #b3d2eb;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 20rem;
+  color: #333;
+  font-size: 
+} */
+
+footer {
+  background: #c7c4c4;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: flex-end;
+}
+
+footer p {
+  color: #fff;
+}
+
+.about-content {
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.about-content img {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.help-content {
+  height: 50vh;
+}
+
+@media (max-width: 555px) {
+  header nav .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -1.5rem;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: -2rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  .msg-info {
+    background: #f7c788;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    width: 350px;
+    font-size: 1rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+}
