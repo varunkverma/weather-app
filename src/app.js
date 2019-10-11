@@ -68,7 +68,10 @@ app.get("/weather", (req, res) => {
     forecast(
       latitude,
       longitude,
-      (forecastError, { summary, currentTemp, chanceOfRain }) => {
+      (
+        forecastError,
+        { summary, currentTemp, chanceOfRain, temperatureMin, temperatureMax }
+      ) => {
         // if error while using the forecast
         if (forecastError) {
           return res.send({
@@ -81,7 +84,9 @@ app.get("/weather", (req, res) => {
           forecast: {
             summary,
             currentTemperature: currentTemp,
-            chanceOfRain
+            chanceOfRain,
+            temperatureMin,
+            temperatureMax
           },
 
           location: placeName,

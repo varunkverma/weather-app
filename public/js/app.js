@@ -17,10 +17,7 @@ weatherForm.addEventListener("submit", e => {
         console.log(forecastData.error);
         messageOne.textContent = forecastData.error;
       } else {
-        console.log(
-          `${forecastData.forecast.summary}. Temperature is ${forecastData.forecast.currentTemperature} degrees, with a chance of ${forecastData.forecast.chanceOfRain}`
-        );
-        messageOne.textContent = `${forecastData.forecast.summary}. Temperature is ${forecastData.forecast.currentTemperature} degrees, with a chance of ${forecastData.forecast.chanceOfRain} of Rain`;
+        messageOne.textContent = `${forecastData.forecast.summary}. Temperature is ${forecastData.forecast.currentTemperature} degrees, with a chance of ${forecastData.forecast.chanceOfRain}% of Rain. Minimum temperature would be around ${forecastData.forecast.temperatureMin} degrees & Maximum temperature would be around ${forecastData.forecast.temperatureMax} degrees`;
       }
     });
   });
