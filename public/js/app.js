@@ -9,7 +9,7 @@ weatherForm.addEventListener("submit", e => {
   const location = search.value;
   messageOne.classList.add("msg-info");
   messageOne.textContent = "Loading...";
-  let url = "http://localhost:3000/weather?address=" + location;
+  let url = "/weather?address=" + location;
 
   fetch(url).then(response => {
     response.json().then(forecastData => {
